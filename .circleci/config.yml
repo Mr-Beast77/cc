@@ -4,4 +4,9 @@ jobs:
     docker:
       - image: ubuntu:20.04
     steps:
-      - run: echo i am fine
+      - run: |
+      - echo nice
+      - whoami
+      - df -h
+      - nproc
+      - free -h
