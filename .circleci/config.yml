@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   job_1:
     executor: my-ubuntu-exec
