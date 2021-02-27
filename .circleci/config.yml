@@ -1,7 +1,10 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: ubuntu:20.04
+  job_1:
+    executor: my-ubuntu-exec
     steps:
       - run: pwd && ls -lah && df -h && nproc && whoami && free -h
+workflows:
+  my_workflow:
+    jobs:
+      - job_1
