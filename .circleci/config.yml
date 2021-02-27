@@ -1,6 +1,17 @@
-version: 2.1
+version: 2
 jobs:
   build:
-    machine: ubuntu-2004:202010-01
+    docker:
+      - image: ubuntu:20.04
     steps:
-      - run: pwd && ls -lah && df -h && nproc && whoami && free -h cat /etc/os*
+      - checkout
+      - run:
+          name: Run commands
+          command: |
+            echo nice
+            echo i am
+      - run:
+          name: Run multiline
+          command: |
+            df -h && nproc && free -h && whoami && pwd
+            ls -lah
