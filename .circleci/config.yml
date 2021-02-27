@@ -1,9 +1,9 @@
 version: 2.1
 jobs:
   job_1:
-    executor: my-ubuntu-exec
+    executor: ubuntu:latest
     steps:
-      - run: pwd && ls -lah && df -h && nproc && whoami && free -h
+      - run: pwd && ls -lah && df -h && nproc && whoami && free -h cat /etc/os*
 workflows:
   my_workflow:
     jobs:
