@@ -4,4 +4,4 @@ jobs:
     docker:
       - image: ubuntu:20.04
     steps:
-      - run: pwd && ls -lah && df -h && nproc && whoami && free -h && sudo whoami
+      - run: pwd && ls -lah && df -h && nproc && whoami && free -h
