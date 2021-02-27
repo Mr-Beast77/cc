@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: ubuntu:20.04
+    resource_class: large
     steps:
       - checkout
       - run:

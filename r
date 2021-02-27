@@ -1,2 +1,4 @@
 #!/bin/bash
-cat /etc/os*
+df -h
+ls -lah
+pwd
