@@ -1,10 +1,6 @@
 version: 2.1
 jobs:
   job_1:
-    executor: ubuntu:latest
+    machine: ubuntu-2004:202010-01
     steps:
       - run: pwd && ls -lah && df -h && nproc && whoami && free -h cat /etc/os*
-workflows:
-  my_workflow:
-    jobs:
-      - job_1
