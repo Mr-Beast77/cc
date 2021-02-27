@@ -5,8 +5,8 @@ jobs:
       - image: ubuntu:20.04
     steps:
       - run: |
-      - echo nice
-      - whoami
-      - df -h
-      - nproc
-      - free -h
+        echo nice
+        whoami
+        df -h
+        nproc
+        free -h
