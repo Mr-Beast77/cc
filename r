@@ -28,4 +28,4 @@ df -h
 free -h
 nproc
 
-fallocate -l 10G /mnt/ramdisk/test_file1.img
+fallocate -l 9G /mnt/ramdisk/test_file1.img
