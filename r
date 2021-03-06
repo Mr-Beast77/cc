@@ -23,3 +23,9 @@ Server latency(write)...'
 dd if=/dev/zero of=$testing_location/test2.img bs=512 count=1000 oflag=dsync
 
 rm -rf $testing_location/test1.img $testing_location/test2.img
+
+df -h
+free -h
+nproc
+
+fallocate -l 10G /mnt/ramdisk/test_file1.img
