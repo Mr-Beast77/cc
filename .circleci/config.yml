@@ -1,9 +1,11 @@
-version: 2
+
+   
+version: 2.1
 jobs:
   build:
-    docker:
-      - image: ubuntu:20.04
-    resource_class: large
+    machine:
+      image: ubuntu-1604:202007-01
+   
     steps:
       - checkout
       - run:
